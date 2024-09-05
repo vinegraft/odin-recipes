@@ -1,27 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
 body {
     background-color: #352414;
     color: #bda671;
     font-family: sans-serif;
     font-size: 1.25rem;
+    min-width: 360px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 h1 {
     font-family: serif;
     font-size: 3rem;
+    margin: 10px auto;
+    text-align: center;
 }
 
-h3 {
+h2 {
     font-family: serif;
     font-size: 2rem;
+    text-align: center;
 }
 
-.photo-credit {
+#photo-credit {
     font-size: 0.66rem;
     color: inherit;
     text-decoration: inherit;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.photo-credit:visited {
+#photo-credit:visited {
     color: inherit;
 }
 
@@ -31,4 +49,26 @@ a:link {
 
 a:visited {
     color: #A73B25;
+}
+
+.list-recipes {
+    list-style-type: none;
+}
+
+.centered {
+    text-align: center;
+    padding-left: 0;
+}
+
+p {
+    margin: 10px auto;
+    text-align: center;
+    min-width: 360px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
 }
